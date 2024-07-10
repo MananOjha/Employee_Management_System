@@ -1,0 +1,43 @@
+create 3 packages
+	1. com.handle.admin
+	2. com.handle.employees
+	3. com.handle.main
+	
+In com.handle.employees
+	define an Employee class with below attributes
+		1. id - unique and cannot be changed once assigned.
+		2. name
+		3. phone
+		4. email
+		5. salary
+		6. designation
+		7. experience
+	There are two types of Employees
+		1. Permanent Employee.
+		2. Contract Employee.
+	Permanent Employee has options of Stocks and he/she is eligible to get bonus.
+	Contract Employee has contract period and he/she is not eligible to get bonus.
+	
+	Use here java bean class structure.
+	
+	
+	Define class by name SalaryUpdation in admin package.
+	-> class is responsible to update the salary of the given employee
+		write a method by name updateSalary, which take two parameter
+		first parameter Employee type - the employee whose salary should be
+		updated
+		second parameter Double type - salary value to be updated given employee.
+		
+	Define class by name RewardBonus in admin package.
+	-> Class is responsible to reward a bonus to given employee.
+		write a method by name addBonus, which take two parameter
+		first parameter Employee type - the employee whose should be 
+		rewarded with bonus. NOTE : that only permanent employee are allowed
+		
+		second parameter Double type - bonus value to be added to employee salary.
+		
+		
+	Define class by name EmployeeAddition
+	-> Class is responsible to add single Employee record into EmployeeDb
+		Write a method by addEmployee, which take one parameter
+		Parameter type Employee employee - the Employee to be added.
